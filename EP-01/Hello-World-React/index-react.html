@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index-react.css">
+    <title>Namaste React</title>
+</head>
+<body>
+
+    <!-- Rem!! Order of files matter if we put 'App.js' before React CDN links then code won't run -->
+
+    <!-- using react to print "Hello World" -->
+    <h1>Hello top of root</h1>
+
+    <div id="root">
+        <!-- we have made this div as a createRoot so, here only React will work not on the whole body -->
+         <!-- React is a library because it can work in the small portion of our application -->
+        <h1>Akshay is here.</h1>
+    </div>
+
+    <h1>Hello below root</h1>
+
+    <!-- React CDN Links -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <script src="./App.js"></script>
+    <script src="Nesting.js"></script>
+    
+
+</body>
+</html>

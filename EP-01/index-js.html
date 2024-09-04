@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaste React</title>
+</head>
+<body>
+    <!-- Using JavaScript to print "Hello World" on web-page -->
+    <div id="root"></div>
+    <script>
+        
+        const heading = document.createElement("h1"); // create a heading element
+        heading.innerHTML = "Hello World from JavaScript!";  // inserted the following text into "h1" element
+        
+        // now we'll put heading element into div with id "root" 
+        const root = document.getElementById("root")  // this root element is referencing to the div element with the id "root"
+        root.appendChild(heading);  // putting the heading element into div tag 
+    </script>
+</body>
+</html>
